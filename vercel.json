@@ -1,6 +1,10 @@
 {
-    "github": {
-        "enabled": false,
-        "silent": false
-    }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
+  "github": {
+    "enabled": true,
+    "silent": true
+  }
 }

@@ -140,25 +140,14 @@ const MainMenuBase = ({
     <div className={styles.root}>
       <div className={styles['game-title']}>
         <div className={styles.minecraft}>
-          <div className={styles.edition} />
           <span className={styles.splash}>{splashText}</span>
         </div>
       </div>
 
       <div className={styles.menu}>
-        <ButtonWithTooltip
-          initialTooltip={{
-            content: 'Connect to Java servers!',
-            placement: 'top',
-          }}
-          {...connectToServerLongPress}
-          data-test-id='servers-screen-button'
-        >
-          Connect to server
-        </ButtonWithTooltip>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <ButtonWithTooltip
-            style={{ width: 150 }}
+            style={{ width: 176 }}
             {...singleplayerLongPress}
             data-test-id='singleplayer-button'
             disabled={!singleplayerAvailable}
@@ -171,13 +160,6 @@ const MainMenuBase = ({
             Singleplayer
           </ButtonWithTooltip>
 
-          <ButtonWithTooltip
-            disabled={!mapsProvider}
-            // className={styles['maps-provider']}
-            icon={pixelartIcons.map}
-            initialTooltip={{ content: 'Explore maps to play from provider!', placement: 'top-start' }}
-            onClick={() => mapsProvider && openURL(httpsRegex.test(mapsProvider) ? mapsProvider : 'https://' + mapsProvider, false)}
-          />
 
           <ButtonWithTooltip
             data-test-id='select-file-folder'

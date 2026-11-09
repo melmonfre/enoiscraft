@@ -1,6 +1,6 @@
 {
-    "name": "Minecraft Web Client",
-    "short_name": "Minecraft Web Client",
+    "name": "WeeeCraft",
+    "short_name": "WeeeCraft",
     "scope": "./",
     "start_url": "./",
     "icons": [
@@ -9,8 +9,8 @@
             "sizes": "720x720"
         }
     ],
-    "background_color": "#349474",
-    "theme_color": "#349474",
+    "background_color": "#7ac70c",
+    "theme_color": "#7ac70c",
     "lang": "en-US",
     "orientation": "landscape",
     "display": "standalone"

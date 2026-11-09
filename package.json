@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-web-client",
+  "name": "weeecraft",
   "version": "0.0.0-dev",
   "description": "A minecraft client running in a browser",
   "scripts": {

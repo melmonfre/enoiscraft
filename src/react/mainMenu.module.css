@@ -23,10 +23,14 @@
 .game-title .minecraft {
     display: block;
     position: relative;
-    background-image: var(--title-gui);
-    background-size: 256px;
-    width: 256px;
-    height: 44px;
+    background-image: url('../../assets/weeecraft-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
+    width: 300px;
+    height: 90px;
+    filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.35));
 }
 
 .game-title .raft {
@@ -55,8 +59,8 @@
 
 .splash {
     position: absolute;
-    top: 32px;
-    left: 227px;
+    top: 70px;
+    left: 240px;
     color: #ff0;
     transform: translate(-50%, -50%) rotateZ(-20deg) scale(1);
     width: max-content;
